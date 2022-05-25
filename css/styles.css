@@ -10,6 +10,7 @@
 /* колір логотипу 1-частина #2196F3, 2-частина #000000 */
 /* колір кнопки #F5F4FA */
 /* колір акцента кнопки #2196F3 */
+/* background hero: : #C4C4C4; */
 
 /* ПОРТФОЛІО */
 
@@ -156,14 +157,23 @@ body {
 
 /* Герой Секція 1*/ /* Тимчасовий фон для героя, щоб було видно текст */
 .hero {
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: #2f303a;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
-  width: 696px;
+  max-width: 696px;
   margin-top: 0;
   margin-bottom: 40px;
   margin-left: auto;
@@ -213,6 +223,7 @@ body {
 }
 
 .work-benefits {
+  padding-top: 30px;
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -251,6 +262,32 @@ body {
 .work-skill:nth-child(4n) {
   margin-right: 0;
 }
+
+.work-skill::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/icon-svg/antenna-icon.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/icon-svg/clock-icon.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/icon-svg/diagram-icon.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/icon-svg/astronaut-icon.svg);
+}
+
 /* Секція 3 */
 
 .technology {
