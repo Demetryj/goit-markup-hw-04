@@ -218,8 +218,15 @@ body {
   padding-top: 94px;
 }
 
-.work-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .work-benefits {
@@ -503,8 +510,15 @@ body {
 /* Герой Секція */
 /* Колір фону наслідується з CSS правила першої сторнінки.*/
 
-.filtres .hero-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .filtres {
