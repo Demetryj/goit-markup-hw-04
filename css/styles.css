@@ -10,7 +10,9 @@
 /* колір логотипу 1-частина #2196F3, 2-частина #000000 */
 /* колір кнопки #F5F4FA */
 /* колір акцента кнопки #2196F3 */
-/* background hero: : #C4C4C4; */
+/* background hero  #C4C4C4; */
+/* колір фону іконок 2 секція #F5F4FA */
+/* колір шконок #afb1b8 */
 
 /* ПОРТФОЛІО */
 
@@ -21,6 +23,7 @@
   --button-color: #f5f4fa;
   --button-accent-color: #2196f3;
   --accent-color: #2196f3;
+  --icon-color: #afb1b8;
   --card-set-gap: 30px;
 }
 /* Основні властивості, які наслідуються у тілі сторінки */
@@ -230,7 +233,7 @@ body {
 }
 
 .work-benefits {
-  padding-top: 30px;
+  /* padding-top: 30px; */
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -270,29 +273,12 @@ body {
   margin-right: 0;
 }
 
-.work-skill::before {
-  display: block;
-  content: '';
+.icon-work {
   height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/icon-svg/antenna-icon.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/icon-svg/clock-icon.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icon-svg/diagram-icon.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icon-svg/astronaut-icon.svg);
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* Секція 3 */
@@ -404,6 +390,61 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.link-list {
+  display: flex;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  fill: var(--icon-color);
+}
+
+.link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--wite-text-color);
+}
+
+/* .link-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  border-radius: 50%;
+}
+
+.link-item:hover,
+.link-item:focus {
+  background-color: var(--accent-color);
+}
+
+.link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-link {
+  fill: #afb1b8;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  fill: var(--wite-text-color);
+} */
 
 /* Підвал */
 .contacts {
