@@ -127,10 +127,15 @@ body {
 
   padding: 0;
   margin: 0 0 0 auto;
+
+  align-items: center;
 }
 
 .mail-tel .mail,
 .mail-tel .tel {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -145,6 +150,12 @@ body {
 .tel:hover,
 .tel:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.icon-mail {
+  margin-right: 10px;
+  fill: inherit;
 }
 
 .link,
@@ -415,36 +426,64 @@ body {
   margin-right: 10px;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   fill: var(--wite-text-color);
 }
 
-/* .link-item {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
+/* Секція 5 */
 
-  border-radius: 50%;
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.link-item:hover,
-.link-item:focus {
-  background-color: var(--accent-color);
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
 }
 
-.link-item:not(:last-child) {
-  margin-right: 10px;
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-font-color);
 }
 
-.icon-link {
-  fill: #afb1b8;
+.clients-link {
+  display: block;
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  flex-basis: calc((100% - 150px) / 6);
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  fill: var(--icon-color);
 }
 
-.icon-link:hover,
-.icon-link:focus {
-  fill: var(--wite-text-color);
-} */
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 /* Підвал */
 .contacts {
@@ -502,6 +541,64 @@ body {
 
 .address {
   font-style: normal;
+}
+/*---------Підвал------- Посилання на соцмережі---------------*/
+
+.links-paragraph {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--wite-text-color);
+}
+
+.footer-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.footer-link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  flex-basis: calc((100% - 30px) / 4);
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--wite-text-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background: var(--accent-color);
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.contacts > .container.footer {
+  display: flex;
+}
+
+.address-footer {
+  margin-right: 70px;
+}
+
+.links-footer {
+  padding-top: 12px;
 }
 
 /* ПОРТФОЛІО */
