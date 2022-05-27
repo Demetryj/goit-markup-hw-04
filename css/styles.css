@@ -286,8 +286,13 @@ body {
 }
 
 .icon-work {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
   height: 120px;
-  padding: 25px 100px;
+
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -365,7 +370,7 @@ body {
 
 .team-profession {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 
   line-height: 1.19;
   text-align: center;
@@ -408,11 +413,9 @@ body {
 
 .link-list {
   display: flex;
+  justify-content: center;
 
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
-  padding-bottom: 30px;
+  padding-left: 0px;
 
   list-style: none;
 }
@@ -595,14 +598,11 @@ body {
 
 .contacts > .container.footer {
   display: flex;
+  align-items: baseline;
 }
 
 .address-footer {
   margin-right: 70px;
-}
-
-.links-footer {
-  padding-top: 12px;
 }
 
 /* ПОРТФОЛІО */
@@ -697,7 +697,7 @@ body {
 .button-design:hover,
 .button-marketing:hover,
 .button-library:focus,
-.button-websits:focus,
+.button-websites:focus,
 .button-applications:focus,
 .button-design:focus,
 .button-marketing:focus {
@@ -777,7 +777,19 @@ body {
   margin-bottom: 0;
 }
 
-.projects-page:hover {
+/* .projects-page:hover,
+.projects-page:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
